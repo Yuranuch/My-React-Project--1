@@ -6,6 +6,7 @@ import PortfolioPage from "./Container/PortfolioPage/PortfolioPage";
 import Contacts from "./Container/Contacts/Contacts";
 import DialogsPage from "./Container/DialogsPage/DialogsPage";
 import {BrowserRouter, Route} from "react-router-dom";
+import state from "./Redux/state";
 
 const App = (props) => {
 
@@ -18,7 +19,7 @@ const App = (props) => {
             <div className={style.content}>
                 <Route path='/home' component={HomePage}/>
                 <Route path='/portfolio' component={PortfolioPage}/>
-                <Route path='/dialogs' render={()=> <DialogsPage friendsData={props.friendsData} messageData={props.messageData} />} />
+                <Route path='/dialogs' render={()=> <DialogsPage friendsData={props.state.dialogPage.friendsData} messageData={props.state.dialogPage.messageData} />} />
                 <Route path='/contact' component={Contacts}/>
             </div>
         </div>
