@@ -6,7 +6,7 @@ import style from './Contacts.module.css';
 const Contacts = () => {
     return (
         <div>
-            +37529 822883
+            +37529 8228833
         </div>
     )
 }
