@@ -1,9 +1,14 @@
 import React, {} from 'react';
 import style from './Messages.module.css';
-import MessegeItem from "./Messeges/MessegeItem";
+import MessegeItem from "./MessegesItem/MessegeItem";
+
 
 
 const Messages = (props) => {
+
+
+
+
 
     let messageElements = props.messageData.map ((i)=> {
         return  <MessegeItem message={i.message}/>
@@ -13,8 +18,9 @@ const Messages = (props) => {
         <div className={style.dialogs}>
             {messageElements}
             <textarea/>
-            <div>
-                New post
+            <div className={style.posts}>
+
+
             </div>
         </div>
 

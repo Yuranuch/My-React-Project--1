@@ -8,8 +8,6 @@ import Messages from "./Messages/Messages";
 const DialogsPage = (props) => {
 
 
-
-
     return (
         <div>
             <div>
