@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eb48169-89d0-4ba5-b06a-457f9959a8b1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Container/DialogsPage/DialogsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Container/DialogsPage/DialogsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Container/DialogsPage/Messages/Messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Container/DialogsPage/Messages/Messages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Container/DialogsPage/Messages/Messages.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Container/DialogsPage/Messages/Messages.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Container/DialogsPage/Messages/Messeges/MessegeItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Container/DialogsPage/Messages/MessegesItem/MessegeItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Container/DialogsPage/Messages/Messeges/MessegeItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Container/DialogsPage/Messages/MessegesItem/MessegeItem.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -163,7 +156,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="14" />
     <option name="y" value="21" />
     <option name="width" value="1346" />
@@ -275,15 +268,15 @@
       <workItem from="1556868430468" duration="15232000" />
       <workItem from="1557128955716" duration="992000" />
       <workItem from="1557222244146" duration="2231000" />
-      <workItem from="1557225581834" duration="5655000" />
+      <workItem from="1557225581834" duration="6880000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54791000" />
+    <option name="totallyTimeSpent" value="56016000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21726191" />
       <window_info id="Structure" order="1" weight="0.25" />
