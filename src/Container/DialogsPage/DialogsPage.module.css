@@ -1,0 +1,11 @@
+.title {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+.aboutPageWrap {
+    display: flex;
+    justify-content: start;
+}

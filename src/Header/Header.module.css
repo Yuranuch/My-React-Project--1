@@ -1,0 +1,31 @@
+.HeaderWrap {
+    background-color: #313030;
+}
+.header {
+    width: 1250px;
+    height: 88px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+.navItem a{
+    font-size: 14px;
+    display: block;
+    color: #eeeaea;
+    text-transform: uppercase;
+    height: 88px;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.navItem a:hover{
+    background-color: #ff3f40;
+}
+.navItem a.active {
+    background-color: #ff3f40;
+}
+
+

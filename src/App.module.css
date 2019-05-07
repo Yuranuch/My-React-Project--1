@@ -1,0 +1,9 @@
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px 20px 20px 30px;
+}
+body {
+    background-color: gainsboro;
+}
