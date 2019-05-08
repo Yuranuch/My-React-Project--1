@@ -14,6 +14,17 @@ let state = {
             {message: 'I am fine.'}
         ]
     }
+
+
 };
+
+export let addMessage =(newMessageText)=> {
+    let newMessage = {
+        message: newMessageText
+    };
+    state.dialogPage.messageData.push(newMessage)
+};
+
+
 
 export default state;

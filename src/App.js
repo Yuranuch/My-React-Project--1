@@ -19,7 +19,11 @@ const App = (props) => {
             <div className={style.content}>
                 <Route path='/home' component={HomePage}/>
                 <Route path='/portfolio' component={PortfolioPage}/>
-                <Route path='/dialogs' render={()=> <DialogsPage friendsData={props.state.dialogPage.friendsData} messageData={props.state.dialogPage.messageData} />} />
+                <Route path='/dialogs' render={()=> <DialogsPage
+                    friendsData={props.state.dialogPage.friendsData}
+                    messageData={props.state.dialogPage.messageData}
+                    addMessage={props.addMessage}
+                />} />
                 <Route path='/contact' component={Contacts}/>
             </div>
         </div>
