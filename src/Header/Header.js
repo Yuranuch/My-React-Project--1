@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <div className={style.HeaderWrap}>
             <div className={style.header}>
-
+                <Logo />
                 <div className={`${style.navItem} ${style.active}`}>
                     <NavLink to="/home" activeClassName={style.active}>home</NavLink>
                 </div>
@@ -21,8 +21,10 @@ const Header = () => {
                 <div className={style.navItem}>
                     <NavLink to="/contact" activeClassName={style.active}>contacts</NavLink>
                 </div>
+                <div className={style.navItem}>
+                    <NavLink to="/test" activeClassName={style.active}>test</NavLink>
+                </div>
 
-                <Logo />
             </div>
         </div>
     )

@@ -5,10 +5,15 @@ import MessegeItem from "./MessegesItem/MessegeItem";
 
 const Messages = (props) => {
     let newMessElement=React.createRef();
-
-    let AddMessage = ()=> {
+    let ChangeMessage= ()=> {
         let text=newMessElement.current.value;
-        props.addMessage(text);
+        props.updateMessageText(text);
+
+    };
+    let AddMessage = ()=> {
+
+        props.addMessage();
+        props.updateMessageText('')
     }
 
 
@@ -20,7 +25,9 @@ const Messages = (props) => {
         <div className={style.dialogs}>
             {messageElements}
             <div>
-                <textarea ref={newMessElement}/>
+
+                <textarea onChange={ChangeMessage} ref={newMessElement} value={props.newMessageText}/>
+
             </div>
             <div className={style.buttonWrap}>
                 <button onClick={AddMessage}>Send Message</button>

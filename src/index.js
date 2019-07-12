@@ -3,10 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import state, {addMessage} from './Redux/state';
+import state, {addMessage, subscribe, updateMessageText} from './Redux/state';
 
 
-ReactDOM.render(<App state={state} addMessage={addMessage} />, document.getElementById('root'));
+let rerenderEntireTree= ()=> {
+
+ReactDOM.render(<App state={state} addMessage={addMessage} updateMessageText={updateMessageText} newMessageText={state.dialogPage.newMessageText} />, document.getElementById('root'));
+
+};
+
+rerenderEntireTree(state);
+
+subscribe(rerenderEntireTree);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -1,3 +1,7 @@
+let rerenderEntireTree = () => {
+    console.log ('state changed')
+}
+
 let state = {
     dialogPage:{
         friendsData: [
@@ -11,20 +15,29 @@ let state = {
             {message: 'Hello!'},
             {message: 'Hi'},
             {message: 'How are you?'},
-            {message: 'I am fine.'}
-        ]
+            {message: 'I am fine.'},
+
+        ],
+        newMessageText: 'Yuranuch'
     }
-
-
 };
-
-export let addMessage =(newMessageText)=> {
+export let addMessage =()=> {
     let newMessage = {
-        message: newMessageText
+        message: state.dialogPage.newMessageText
     };
-    state.dialogPage.messageData.push(newMessage)
+    state.dialogPage.messageData.push(newMessage);
+    rerenderEntireTree(state);
 };
 
+export let updateMessageText = (newText)=> {
+    state.dialogPage.newMessageText = newText;
+    rerenderEntireTree(state);
+};
+
+
+export let subscribe = (observer)=>{
+    rerenderEntireTree = observer;
+}
 
 
 export default state;

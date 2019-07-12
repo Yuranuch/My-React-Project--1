@@ -7,6 +7,7 @@ import Contacts from "./Container/Contacts/Contacts";
 import DialogsPage from "./Container/DialogsPage/DialogsPage";
 import {BrowserRouter, Route} from "react-router-dom";
 import state from "./Redux/state";
+import TestPage from "./Container/TestPage/TestPage";
 
 const App = (props) => {
 
@@ -22,9 +23,12 @@ const App = (props) => {
                 <Route path='/dialogs' render={()=> <DialogsPage
                     friendsData={props.state.dialogPage.friendsData}
                     messageData={props.state.dialogPage.messageData}
+                    newMessageText={props.state.dialogPage.newMessageText}
                     addMessage={props.addMessage}
+                    updateMessageText={props.updateMessageText}
                 />} />
                 <Route path='/contact' component={Contacts}/>
+                <TestPage/>
             </div>
         </div>
         </BrowserRouter>
