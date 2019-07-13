@@ -28,7 +28,8 @@ const App = (props) => {
                     updateMessageText={props.updateMessageText}
                 />} />
                 <Route path='/contact' component={Contacts}/>
-                <TestPage/>
+                <Route path='/test' component={TestPage}/>
+
             </div>
         </div>
         </BrowserRouter>

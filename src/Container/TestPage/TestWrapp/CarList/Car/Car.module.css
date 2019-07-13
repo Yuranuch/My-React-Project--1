@@ -1,0 +1,10 @@
+.car {
+    border: 2px solid green;
+    border-radius: 10px;
+    margin: 5px;
+    width: 200px;
+    padding: 3px 10px;
+}
+span {
+    color: aqua;
+}
