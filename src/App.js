@@ -28,7 +28,10 @@ const App = (props) => {
                     updateMessageText={props.updateMessageText}
                 />} />
                 <Route path='/contact' component={Contacts}/>
-                <Route path='/test' component={TestPage}/>
+                <Route path='/test' render ={()=> <TestPage
+                    carsData={props.carsData}
+                    insertNewCar={props.insertNewCar}
+                />}/>
 
             </div>
         </div>

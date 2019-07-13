@@ -19,7 +19,17 @@ let state = {
 
         ],
         newMessageText: 'Yuranuch'
+    },
+    TestPage:{
+        carsData: [
+            {name: 'Lamborgini', color:'red'},
+            {name: 'VolksWagen', color:"white"},
+            {name: 'Peugeot', color:"black"},
+            {name: 'Audi', color:"yello"}
+        ]
     }
+
+
 };
 export let addMessage =()=> {
     let newMessage = {
@@ -34,10 +44,15 @@ export let updateMessageText = (newText)=> {
     rerenderEntireTree(state);
 };
 
-
 export let subscribe = (observer)=>{
     rerenderEntireTree = observer;
-}
+};
+
+export let insertNewCar = (aboutCarMessage) => {
+
+    let newPostCar = {name: aboutCarMessage, color:'blue'};
+    state.TestPage.carsData.push(newPostCar)
+};
 
 
 export default state;

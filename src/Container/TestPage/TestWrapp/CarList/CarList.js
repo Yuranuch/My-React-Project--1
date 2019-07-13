@@ -3,15 +3,9 @@ import style from './CarList.module.css';
 import Car from "./Car/Car";
 
 
-const CarList = () => {
+const CarList = (props) => {
 
-    let carsData= [
-        {name: 'Lamborgini', color:'red'},
-        {name: 'VolksWagen', color:"white"},
-        {name: 'Peugeot', color:"black"},
-        {name: 'Audi', color:"yello"}
-    ];
-    let carsElements =carsData.map((c)=><Car name={c.name} color={c.color}/>)
+    let carsElements =props.carsData.map((c)=><Car name={c.name} color={c.color}/>)
 
     return (
         <div>

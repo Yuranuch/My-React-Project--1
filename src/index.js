@@ -3,12 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import state, {addMessage, subscribe, updateMessageText} from './Redux/state';
+import state, {addMessage, insertNewCar, subscribe, updateMessageText} from './Redux/state';
+
 
 
 let rerenderEntireTree= ()=> {
 
-ReactDOM.render(<App state={state} addMessage={addMessage} updateMessageText={updateMessageText} newMessageText={state.dialogPage.newMessageText} />, document.getElementById('root'));
+ReactDOM.render(<App state={state}
+                     addMessage={addMessage} updateMessageText={updateMessageText} insertNewCar={insertNewCar}
+                     newMessageText={state.dialogPage.newMessageText}
+                     carsData={state.TestPage.carsData} />,
+                        document.getElementById('root'));
 
 };
 

@@ -5,11 +5,11 @@ import TestWrapp from "./TestWrapp/TestWrapp";
 
 
 
-const TestPage = () => {
+const TestPage = (props) => {
     return (
         <div>
             Здесь пробую, тестирую, тренируюсь!
-            <TestWrapp/>
+            <TestWrapp carsData={props.carsData} insertNewCar={props.insertNewCar}/>
         </div>
     )
 }
