@@ -9,7 +9,7 @@ const TestPage = (props) => {
     return (
         <div>
             Здесь пробую, тестирую, тренируюсь!
-            <TestWrapp carsData={props.carsData} insertNewCar={props.insertNewCar}/>
+            <TestWrapp carsData={props.carsData} dispatch={props.dispatch} /*insertNewCar={props.insertNewCar}*//>
         </div>
     )
 }

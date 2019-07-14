@@ -11,7 +11,9 @@ const TestWrapp = (props) => {
     let insertNewCar = ()=> {
 
         let textCar = newCarText.current.value;
-        props.insertNewCar(textCar);
+        /*props.insertNewCar(textCar);*/
+        let action={type:'INSERT-NEW-CAR', aboutCarMessage: textCar};
+        props.dispatch(action);
         newCarText.current.value='';
     };
 

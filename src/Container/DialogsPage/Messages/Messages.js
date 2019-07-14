@@ -7,13 +7,16 @@ const Messages = (props) => {
     let newMessElement=React.createRef();
     let ChangeMessage= ()=> {
         let text=newMessElement.current.value;
-        props.updateMessageText(text);
+        /*props.updateMessageText(text);*/
+        let action={type:'UPDATE-MESSAGE-TEXT', newText:text}
+        props.dispatch(action);
 
     };
     let AddMessage = ()=> {
-
-        props.addMessage();
-        props.updateMessageText('')
+        /*props.addMessage();*/
+        let action={type:'ADD-MESSAGE'}
+        props.dispatch(action);
+        /*props.updateMessageText('')-занулялось так*/
     }
 
 

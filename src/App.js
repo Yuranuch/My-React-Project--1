@@ -22,13 +22,15 @@ const App = (props) => {
                     friendsData={props.state.dialogPage.friendsData}
                     messageData={props.state.dialogPage.messageData}
                     newMessageText={props.state.dialogPage.newMessageText}
-                    addMessage={props.addMessage}
-                    updateMessageText={props.updateMessageText}
+                    /*addMessage={props.addMessage}*/
+                    /*updateMessageText={props.updateMessageText}*/
+                    dispatch={props.dispatch}
                 />} />
                 <Route path='/contact' component={Contacts}/>
                 <Route path='/test' render ={()=> <TestPage
                     carsData={props.carsData}
-                    insertNewCar={props.insertNewCar}
+                    /*insertNewCar={props.insertNewCar}*/
+                    dispatch={props.dispatch}
                 />}/>
 
             </div>

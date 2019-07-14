@@ -16,7 +16,7 @@ const DialogsPage = (props) => {
         <div className={style.aboutPageWrap}>
 
             <Friends friendsData={props.friendsData}/>
-            <Messages messageData={props.messageData} addMessage={props.addMessage} updateMessageText={props.updateMessageText} newMessageText={props.newMessageText}/>
+            <Messages messageData={props.messageData} dispatch={props.dispatch} /*addMessage={props.addMessage}*/ updateMessageText={props.updateMessageText} newMessageText={props.newMessageText}/>
 
         </div>
         </div>
