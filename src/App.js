@@ -11,8 +11,6 @@ import TestPage from "./Container/TestPage/TestPage";
 
 const App = (props) => {
 
-
-
     return (
         <BrowserRouter>
         <div className={style.container}>

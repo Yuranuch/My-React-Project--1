@@ -11,7 +11,8 @@ const TestWrapp = (props) => {
     let insertNewCar = ()=> {
 
         let textCar = newCarText.current.value;
-        props.insertNewCar(textCar)
+        props.insertNewCar(textCar);
+        newCarText.current.value='';
     };
 
 

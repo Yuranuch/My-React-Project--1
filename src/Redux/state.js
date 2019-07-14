@@ -2,6 +2,8 @@ let rerenderEntireTree = () => {
     console.log ('state changed')
 }
 
+
+
 let state = {
     dialogPage:{
         friendsData: [
@@ -36,12 +38,12 @@ export let addMessage =()=> {
         message: state.dialogPage.newMessageText
     };
     state.dialogPage.messageData.push(newMessage);
-    rerenderEntireTree(state);
+    rerenderEntireTree();
 };
 
 export let updateMessageText = (newText)=> {
     state.dialogPage.newMessageText = newText;
-    rerenderEntireTree(state);
+    rerenderEntireTree();
 };
 
 export let subscribe = (observer)=>{
@@ -51,7 +53,8 @@ export let subscribe = (observer)=>{
 export let insertNewCar = (aboutCarMessage) => {
 
     let newPostCar = {name: aboutCarMessage, color:'blue'};
-    state.TestPage.carsData.push(newPostCar)
+    state.TestPage.carsData.push(newPostCar);
+    rerenderEntireTree(state)
 };
 
 

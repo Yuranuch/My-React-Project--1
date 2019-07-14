@@ -17,7 +17,7 @@ ReactDOM.render(<App state={state}
 
 };
 
-rerenderEntireTree(state);
+rerenderEntireTree();
 
 subscribe(rerenderEntireTree);
 
